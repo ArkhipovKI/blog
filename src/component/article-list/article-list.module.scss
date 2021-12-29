@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 1440px;
+    background-color: #EBEEF3;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 204px;
+    height: 24px;
+}
+li{
+    list-style-type: none;
+}
+ 
+.pag{
+    margin: 20px auto 20px auto;
+}

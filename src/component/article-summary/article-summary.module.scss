@@ -1,0 +1,99 @@
+.article{
+    margin-top: 26px;
+    width: 938px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.15));
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.descr-container{
+    margin: 15px 0 0 15px;
+    max-width: 700px;
+}
+.title-link{
+    font-size: 20px;
+    line-height: 28px;
+    a{
+        color: #1890FF;
+        text-decoration: none;
+    }
+}
+.like{
+    margin-left: 15px;
+    padding: 0;
+    height: 22px;
+    width: 34px;
+    text-align: right;
+    font-size: 12px;
+    line-height: 22px;
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url('../../img/heart.svg');
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+    border: none;    
+    cursor: pointer;
+}
+.ilike{
+    background-image: url('../../img/heart-red.svg');
+}
+
+.tags-container{
+    display: flex;
+}
+
+.tag{
+    margin: 2px 5px 0 0;
+    padding: 2px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.summary{
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.author{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: 10px;
+    min-width: 141px;
+}
+
+.name{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.date{
+    margin-top: -5px;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.avatar{
+    margin: 20px 15px 0 0;
+}
+
+.loading{
+    text-align: center;
+    height: 50px;
+    border: solid 2px blue;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: solid 3px red;
+    font-size: 140%;
+}

@@ -1,0 +1,132 @@
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 34px;
+    width: 938px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 6px;
+    box-shadow: 0px 22px 106px rgba(0, 0, 0, 0.07);
+}
+.title{
+    margin-top: 48px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 874px;
+    label{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 20px;
+        width: 100%;
+        color: rgba(38, 38, 38, 1);
+        font-size: 14px;
+    }
+    input{
+        width: 100%;
+        height: 40px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(217, 217, 217, 1);
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 24px;
+        &:placeholder-shown{
+            color: rgba(191, 191, 191, 1);
+        }
+    }
+    .text{
+        width: 874px;
+        min-height: 168px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(217, 217, 217, 1);
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 24px;
+        resize: none; 
+        &:placeholder-shown{
+            color: rgba(191, 191, 191, 1);
+        }
+    }
+    .error-inp{   
+        margin-bottom: 0;
+        border: 1px solid rgba(245, 34, 45, 1);
+    }
+}
+.tags-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.tag-container{
+    display: flex;
+    flex-direction: column;
+}
+.tag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.input-tag{
+    width: 300px;
+}
+.btn-tag-del{
+    margin-left: 18px;
+    height: 40px;
+    width: 118px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(245, 34, 45, 1);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-tag-add{
+    align-self: flex-end;
+    margin-left: 18px;
+    margin-bottom: 2px;
+    width: 136px;
+    height: 40px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #1890FF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-submit{
+    align-self: flex-start;
+    width: 319px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(24, 144, 255, 1);
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    margin-bottom: 20px;
+    width: 320px;
+    height: 40px;
+    border-radius: 4px;
+}
+.load{
+    border: 3px solid rgb(2, 45, 233);
+}
+.error{
+    border: 3px solid rgb(231, 18, 18);
+}
