@@ -14,8 +14,8 @@ export const useHttpRequest = () => {
             let responce = null;
 
             !token 
-                ?responce = await fetch(url.href)
-                :responce = await fetch(url.href, {
+                ?responce = await fetch(url)
+                :responce = await fetch(url, {
                     headers: {
                         'Authorization': `Token ${token}`
                       }})
@@ -39,7 +39,7 @@ export const useHttpRequest = () => {
         const url = new URL(`api/articles/${slug}`, baseUrl)
 
         try{
-            const responce = await fetch(url.href);
+            const responce = await fetch(url);
     
             if(!responce.ok){
                 throw new Error('error article')
@@ -58,7 +58,7 @@ export const useHttpRequest = () => {
         const url = new URL('/api/users', baseUrl)
 
         try{
-            const responce = await fetch(url.href, {
+            const responce = await fetch(url, {
                 method: 'POST',
                 headers: {
                     'accept': 'application/json',
@@ -89,7 +89,7 @@ export const useHttpRequest = () => {
         const url = new URL('/api/users/login', baseUrl)
 
         try{
-            const responce = await fetch(url.href, {
+            const responce = await fetch(url, {
                 method: 'POST',
                 headers: {
                     'accept': 'application/json',
@@ -122,7 +122,7 @@ export const useHttpRequest = () => {
                 throw new Error('You are not authorized')
             }
 
-            const responce = await fetch(url.href, {
+            const responce = await fetch(url, {
                 headers: {
                     'accept': 'application/json',
                     'Authorization': `Token ${token}`
@@ -156,7 +156,7 @@ export const useHttpRequest = () => {
                 throw new Error('You are not authorized')
             }
 
-            const responce = await fetch(url.href, {
+            const responce = await fetch(url, {
                 method: 'PUT',
                 headers: {
                     'accept': 'application/json',
@@ -198,7 +198,7 @@ export const useHttpRequest = () => {
                 throw new Error('You are not authorized')
             }
 
-            const responce = await fetch(url.href, {
+            const responce = await fetch(url, {
                 method: 'POST',
                 headers: {
                     'accept': 'application/json',
@@ -239,7 +239,7 @@ export const useHttpRequest = () => {
                 throw new Error('You are not authorized')
             }
 
-            const responce = await fetch(url.href, {
+            const responce = await fetch(url, {
                 method: 'PUT',
                 headers: {
                     'accept': 'application/json',
@@ -275,7 +275,7 @@ export const useHttpRequest = () => {
                 throw new Error('You are not authorized')
             }
 
-            const responce = await fetch(url.href, {
+            const responce = await fetch(url, {
                 method: 'DELETE',
                 headers: {
                     'accept': 'application/json',
@@ -309,7 +309,7 @@ export const useHttpRequest = () => {
             throw new Error('You are not authorized')
         }
 
-        const responce = await fetch(url.href, {
+        const responce = await fetch(url, {
             method: 'POST',
             headers: {
                 'accept': 'application/json',
@@ -335,7 +335,7 @@ export const useHttpRequest = () => {
             throw new Error('You are not authorized')
         }
 
-        const responce = await fetch(url.href, {
+        const responce = await fetch(url, {
             method: 'DELETE',
             headers: {
                 'accept': 'application/json',
